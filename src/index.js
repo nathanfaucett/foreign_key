@@ -4,7 +4,10 @@ var isString = require("is_string"),
     underscore = require("underscore");
 
 
-module.exports = function foreignKey(string, key, camelized, lowFirstLetter) {
+module.exports = foreignKey;
+
+
+function foreignKey(string, key, camelized, lowFirstLetter) {
     if (isBoolean(key)) {
         lowFirstLetter = camelized;
         camelized = key;
@@ -18,4 +21,4 @@ module.exports = function foreignKey(string, key, camelized, lowFirstLetter) {
     } else {
         return underscore(string + "_" + key);
     }
-};
+}
