@@ -1,7 +1,7 @@
-var isString = require("is_string"),
-    isBoolean = require("is_boolean"),
-    camelize = require("camelize"),
-    underscore = require("underscore");
+var isString = require("@nathanfaucett/is_string"),
+    isBoolean = require("@nathanfaucett/is_boolean"),
+    camelize = require("@nathanfaucett/camelize"),
+    underscore = require("@nathanfaucett/underscore");
 
 
 module.exports = foreignKey;
